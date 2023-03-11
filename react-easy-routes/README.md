@@ -6,13 +6,13 @@
 
 ```js
 const paths = {
+  // pages
   "/": <Home /> /*__ http://localhost:3000 __*/,
-
   "/signin": <SignIn /> /*__ http://localhost:3000/signin __*/,
 
+  // If sub pages
   "/profile": {
     element: <ProfileLayout /> /*__ http://localhost:3000/profile  __*/,
-
     sub_pages: {
       "/": <Profile /> /*__ http://localhost:3000/profile __*/,
       orders: <MyOrders /> /*__ http://localhost:3000/profile/orders  __*/,
@@ -34,16 +34,13 @@ export default paths;
 ```jsx
 import { Routes, Route } from "react-router-dom";
 import EasyRoutes from "react-easy-routes";
-
 import paths from "./routes";
 
 export default function App() {
   return (
     <>
       <header>Header</header>
-
       <EasyRoutes Routes={Routes} Route={Route} paths={paths} />
-
       <footer>Footer</footer>
     </>
   );
