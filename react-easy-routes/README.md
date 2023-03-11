@@ -1,35 +1,51 @@
-# `react`
-
-React is a JavaScript library for creating user interfaces.
-
-The `react` package contains only the functionality necessary to define React components. It is typically used together with a React renderer like `react-dom` for the web, or `react-native` for the native environments.
-
-**Note:** by default, React will be in development mode. The development version includes extra warnings about common mistakes, whereas the production version includes extra performance optimizations and strips all error messages. Don't forget to use the [production build](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build) when deploying your application.
+# `react-easy-routes`
 
 ## Usage
 
-```js
-import { useState } from "react";
-import { createRoot } from "react-dom/client";
+`routes.js`
 
-function Counter() {
-  const [count, setCount] = useState(0);
+```jsx
+const paths = {
+  "/": <Home /> /*__ http://localhost:3000 __*/,
+
+  "/signin": <SignIn /> /*__ http://localhost:3000/signin __*/,
+
+  "/profile": {
+    element: <ProfileLayout /> /*__ http://localhost:3000/profile  __*/,
+
+    sub_pages: {
+      "/": <Profile /> /*__ http://localhost:3000/profile __*/,
+      orders: <MyOrders /> /*__ http://localhost:3000/profile/orders  __*/,
+      settings: <Settings /> /*__ http://localhost:3000/profile/settings  __*/,
+    },
+  },
+
+  // Put NotFound Component Here
+  "*": <div>404 Not Found</div>,
+};
+
+export default paths;
+```
+
+######
+
+`App.jsx`
+
+```jsx
+import { Routes, Route } from "react-router-dom";
+import EasyRoutes from "react-easy-routes";
+
+import paths from "./routes";
+
+export default function App() {
   return (
     <>
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <header>Header</header>
+
+      <EasyRoutes Routes={Routes} Route={Route} paths={paths} />
+
+      <footer>Footer</footer>
     </>
   );
 }
-
-const root = createRoot(document.getElementById("root"));
-root.render(<Counter />);
 ```
-
-## Documentation
-
-See https://reactjs.org/
-
-## API
-
-See https://reactjs.org/docs/react-api.html

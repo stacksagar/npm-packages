@@ -1,0 +1,32 @@
+{
+  "name": "react-easy-routes",
+  "version": "1.0.0",
+  "description": "react routes",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stacksagar/npm-packages.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "route",
+    "routes",
+    "react-router-dom"
+  ],
+  "author": "stacksagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stacksagar/npm-packages/issues"
+  },
+  "homepage": "https://github.com/stacksagar/npm-packages/blob/main/react-easy-routes/README.md",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
