@@ -1,6 +1,6 @@
-# `react-easy-routes`
+## `react-easy-routes`
 
-## Usage
+### Usage
 
 `routes.jsx`
 
