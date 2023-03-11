@@ -2,9 +2,9 @@
 
 ## Usage
 
-`routes.js`
+`routes.jsx`
 
-```jsx
+```js
 const paths = {
   "/": <Home /> /*__ http://localhost:3000 __*/,
 
