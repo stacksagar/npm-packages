@@ -1,0 +1,10 @@
+"build": npx babel src --out-dir dist
+
+@babel/cli @babel/core @babel/preset-env @babel/preset-react
+
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env"
+  ]
+}
