@@ -1,7 +1,7 @@
 {
   "name": "easy-router-react",
-  "version": "1.0.0",
-  "description": "react easy router",
+  "version": "1.0.1",
+  "description": "easy router react",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

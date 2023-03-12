@@ -1,0 +1,34 @@
+{
+  "name": "npm-packages",
+  "version": "1.0.1",
+  "description": "",
+  "main": "test.js",
+  "type": "module",
+  "dependencies": {
+    "csstype": "^3.1.1",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "easy-router-react": "^1.0.0",
+    "react-router": "^6.9.0",
+    "react-router-dom": "^6.9.0",
+    "scheduler": "^0.23.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stacksagar/npm-packages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stacksagar/npm-packages/issues"
+  },
+  "homepage": "https://github.com/stacksagar/npm-packages#readme"
+}
