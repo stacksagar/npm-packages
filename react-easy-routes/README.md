@@ -1,11 +1,11 @@
-## `react-easy-routes`
+## `easy-router-react`
 
 ### Usage
 
 `routes.jsx`
 
 ```js
-const paths = {
+const routes = {
   // pages
   "/": <Home /> /*__ http://localhost:3000 __*/,
   "/signin": <SignIn /> /*__ http://localhost:3000/signin __*/,
@@ -24,7 +24,7 @@ const paths = {
   "*": <div>404 Not Found</div>,
 };
 
-export default paths;
+export default routes;
 ```
 
 ######
@@ -32,9 +32,8 @@ export default paths;
 `App.jsx`
 
 ```jsx
-import { Routes, Route } from "react-router-dom";
-import EasyRoutes from "react-easy-routes";
-import paths from "./routes";
+import EasyRoutes from "easy-router-react";
+import routes from "./routes";
 
 export default function App() {
   return (

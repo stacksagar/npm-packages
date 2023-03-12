@@ -1,32 +1,33 @@
 {
-  "name": "react-easy-routes",
-  "version": "1.0.2",
-  "description": "react routes",
-  "main": "index.js",
+  "name": "easy-router-react",
+  "version": "1.0.0",
+  "description": "react easy router",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "npx babel src --out-dir dist"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stacksagar/npm-packages.git"
   },
   "keywords": [
-    "react",
-    "router",
-    "route",
-    "routes",
-    "react-router-dom"
+    "react router dom",
+    "react easy router"
   ],
-  "author": "stacksagar",
-  "license": "ISC",
+  "author": "stacksagar <stacksagar@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stacksagar/npm-packages/issues"
   },
-  "homepage": "https://github.com/stacksagar/npm-packages/blob/main/react-easy-routes/README.md",
+  "homepage": "https://github.com/stacksagar/npm-packages/blob/main/easy-router-react/README.md",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6"
-  }
+    "@types/react": "^18.0.28",
+    "react": "^18.2.0",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
