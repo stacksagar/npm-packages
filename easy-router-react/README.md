@@ -1,4 +1,12 @@
-## `easy-router-react`
+```
+npm install easy-router-react
+```
+
+or
+
+```
+yarn add easy-router-react
+```
 
 ### Usage
 
