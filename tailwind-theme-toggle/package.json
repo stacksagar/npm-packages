@@ -1,7 +1,7 @@
 {
-  "name": "easy-router-react",
-  "version": "1.0.2",
-  "description": "easy router react",
+  "name": "tailwind-theme-toggle",
+  "version": "1.0.3",
+  "description": "TailwindCSS Darkmode theme toggler",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -21,11 +21,8 @@
   "bugs": {
     "url": "https://github.com/stacksagar/npm-packages/issues"
   },
-  "homepage": "https://github.com/stacksagar/npm-packages/blob/main/easy-router-react/README.md",
+  "homepage": "https://github.com/stacksagar/npm-packages/blob/main/tailwind-theme-toggle/README.md",
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "react": "^18.2.0",
-    "react-router-dom": "^6.9.0",
     "typescript": "^4.9.5"
   },
   "files": [

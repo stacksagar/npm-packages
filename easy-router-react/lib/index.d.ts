@@ -1,6 +1,5 @@
 /// <reference types="react" />
-export declare function EasyRouter({ Route, paths }: {
-    paths: object;
-    Route: any;
+export declare function EasyRouter({ routes }: {
+    routes: object;
 }): JSX.Element;
 export default EasyRouter;
