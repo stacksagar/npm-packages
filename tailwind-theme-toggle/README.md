@@ -47,3 +47,10 @@ import themeToggler from "tailwind-theme-toggle";
 const button = document.getElementById("togglerButton");
 button.addEventListener("click", themeToggler);
 ```
+
+### Also you can check theme
+
+```js
+const theme = localStorage.getItem("theme");
+const isDark = theme === "dark";
+```

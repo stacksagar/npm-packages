@@ -1,0 +1,83 @@
+.button2_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.button2_wrapper label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Button2Top {
+  width: 40px;
+  height: 16px;
+  background-color: rgb(156 163 17);
+  border-radius: 9999px;
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+.Button2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #555;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  left: -0.25rem;
+  top: -0.25rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+input:checked ~ .Button2 {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+/*  */
+
+.button3_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.button3_wrapper label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Button3Top {
+  display: block;
+  width: 3.5rem;
+  height: 2rem;
+  background-color: #4b5563;
+  border-radius: 9999px;
+}
+
+.Button3 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 9999px;
+  left: 0.25rem;
+  top: 0.25rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+input:checked ~ .Button3 {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+.relative {
+  position: relative;
+}
